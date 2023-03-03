@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', monospace;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    background-color: #FFC20D;
+    width: 50%;
+    height: 100vh;
+    border-radius: 0px 60px 60px 0px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.description {
+    margin: 0 110px 0 110px;
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    background-color: #FFC20D;
+    padding: 30px 90px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.signup {
+    background-color: white;
+    padding: 30px 60px;
+    border: 2px solid #FFC20D;
+    border-radius: 20px;
+    margin-top: 18px;
+}
