@@ -127,6 +127,8 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 900px;
+    max-height: 200px;
+    overflow-y: scroll;
 }
 
 .workplace-management li {
@@ -154,5 +156,53 @@ nav {
     background-color: #FFC20D;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 25px 70px;
+    padding: 20px 70px;
+}
+
+.bottom-menu {
+    margin-top: 40px;
+}
+
+.training-management {}
+
+.training-management h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.training-management ul {
+    list-style: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 412px;
+    overflow-y: scroll;
+    max-height: 204px;
+}
+
+.training-management li {
+    padding: 16px 12px;
+    font-size: 16px;
+}
+
+.training-controls {
+    margin-top: 20px;
+}
+
+.training-controls input[type=text] {
+    font-size: 16px;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 2px solid #FFC20D;
+    border-radius: 20px;
+}
+
+.training-controls a {
+    text-decoration: none;
+    color: black;
+    background-color: #FFC20D;
+    font-size: 16px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
 }
