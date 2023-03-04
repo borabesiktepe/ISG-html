@@ -163,7 +163,13 @@ nav {
     margin-top: 40px;
 }
 
-.training-management {}
+.bottom-menu {
+    display: flex;
+}
+
+.training-management {
+    margin-right: 50px;
+}
 
 .training-management h2 {
     font-size: 20px;
@@ -205,4 +211,36 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 20px;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.notes textarea {
+    width: 416px;
+    height: 204px;
+    resize: none;
+    background-color: #FFEDB7;
+    border-radius: 20px;
+    padding: 28px 38px;
+    font-size: 16px;
+}
+
+.notes a {
+    text-decoration: none;
+    color: black;
+    background-color: #FFC20D;
+    font-size: 16px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin-top: 20px;
 }
