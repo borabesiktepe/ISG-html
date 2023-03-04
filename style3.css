@@ -24,6 +24,10 @@ nav {
     margin: 32px 96px 0 23px;
 }
 
+.user-button i {
+    margin-right: 10px;
+}
+
 .user-button a {
     text-decoration: none;
     text-transform: uppercase;
