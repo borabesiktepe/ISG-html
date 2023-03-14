@@ -96,7 +96,12 @@ nav {
 
 .logoff-button {
     position: absolute;
-    background: #FFFFFF;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #FF0000;
+    font-size: 16px;
+    font-family: 'Montserrat', monospace;
+    border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 28px 90px;
