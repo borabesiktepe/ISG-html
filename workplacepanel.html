@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style_userpanel.css">
+    <link rel="stylesheet" href="/styles/style_workplacepanel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>Panelim</title>
+    <title>Şirket 1 Çalışma Alanı</title>
 </head>
 
 <body>
@@ -40,46 +40,47 @@
             <input type="submit" value="Sign Out" class="logoff-button" />
         </form>
     </nav>
-    
+
     <main>
         <div class="container">
-            <h1>Panelim</h1>
-            <div class="workplace-management">
-                <h2>Çalışma Alanlarım</h2>
+            <h1 class="sectiontitle">Şirket 1 Çalışma Alanı</h1>
+            <div class="trainings-management">
+                <h2>Dökümanlar</h2>
                 <ul>
-                    <li>Şirket 1</li>
-                    <li>Şirket 2</li>
-                    <li>Şirket 3</li>
-                    <li>Şirket 4</li>
+                    <li>Eğitim 1.pdf</li>
+                    <li>Eğitim 2.pdf</li>
                 </ul>
+                <div class="training-controls">
+                    <form>
+                        <input type="file" id="myfile" name="myfile" required>
+                        <input type="submit">
+                    </form>
+                </div>
             </div>
-            <div class="workplace-controls">
-                <input type="text" placeholder="İş yeri adı giriniz">
-                <a href="http://">Ekle</a>
-                <a href="http://">Çıkar</a>
-            </div>
-            <div class="bottom-menu">
-                <div class="training-management">
-                    <h2>Dökümanlarım</h2>
-                    <ul>
-                        <li>Döküman 1.pdf</li>
-                        <li>Döküman 2.docx</li>
-                        <li>Döküman 3.pdf</li>
-                        <li>Döküman 4.pdf</li>
-                    </ul>
-                    <div class="training-controls">
-                        <form>
-                            <input type="file" id="myfile" name="myfile" required>
-                            <input type="submit">
-                        </form>
-                    </div>
+            <div class="contact-section">
+                <h3>İletişim Bilgileri</h3>
+
+                <div class="input-box">
+                    <label for="adress">Adres</label>
+                    <input type="text" name="address" id="address">
                 </div>
 
-                <div class="notes">
-                    <h2>Notlarım</h2>
-                    <textarea></textarea>
-                    <a href="http://">Kaydet</a>
+                <div class="input-box">
+                    <label for="adress">Mail</label>
+                    <input type="text" name="mail" id="mail">
                 </div>
+
+                <div class="input-box">
+                    <label for="adress">Telefon</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+
+                <div class="input-box">
+                    <label for="adress">İletişim kurulan kişi</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+
+                <button type="submit">Kaydet</button>
             </div>
         </div>
     </main>

@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', monospace;
+    font-size: 20px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 340px;
+    background: #FFC20D;
+    border-radius: 0px 60px 60px 0px;
+}
+
+.user-button {
+    margin: 32px 0 0 23px;
+}
+
+.user-button i {
+    margin-right: 10px;
+}
+
+.user-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    margin-left: 25px;
+    font-weight: bolder;
+}
+
+.training-button {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 28px 100px;
+    margin: 88px 28px 0 28px;
+}
+
+.training-button a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.risk-button {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 28px 57px;
+    margin: 38px 28px 0 28px;
+}
+
+.risk-button a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.workplace-select {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 28px;
+}
+
+.workplace-select label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.workplace-select select {
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    padding: 20px 16px 20px 16px;
+    width: 275px;
+}
+
+.logoff-button {
+    position: absolute;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #FF0000;
+    font-size: 16px;
+    font-family: 'Montserrat', monospace;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 28px 90px;
+    left: 28px;
+    bottom: 50px;
+}
+
+.logoff-button a {
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+.container {
+    padding-top: 36px;
+    padding-left: 400px;
+}
+
+.trainings-management {
+    margin-top: 58px;
+}
+
+.trainings-management h2 {
+    font-size: 20px;
+}
+
+.trainings-management ul {
+    margin-top: 28px;
+    list-style: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 900px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.trainings-management li {
+    padding: 16px 12px;
+    font-size: 16px;
+}
+
+.training-controls {
+    margin-top: 20px;
+    display: flex;
+}
+
+.training-controls p {
+    font-size: 16px;
+    border-radius: 20px;
+    align-self: center;
+    margin-right: 25px;
+}
+
+.training-controls input[type=file],
+.training-controls input[type=submit] {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #FFC20D;
+    font-size: 16px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact-section {
+    width: 625px;
+    margin-top: 30px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-box input[type=text] {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #FFC20D;
+    border-style: solid;
+}
+
+.contact-section button {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #FFC20D;
+    font-size: 16px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    padding: 20px 35px;
+    margin-top: 20px;
+}
