@@ -13,7 +13,7 @@
 <body>
     <nav>
         <div class="user-button">
-            <a href="http://">
+            <a href="userpanel.html">
                 <i class="fa-solid fa-helmet-safety"></i>
                 John Doe
             </a>
@@ -29,15 +29,15 @@
             <label>Çalışma alanları</label>
             <select>
                 <option value="" disabled selected>Seçeneğinizi seçin</option>
-                <option value="sirket1">Şirket 1</option>
-                <option value="sirket2">Şirket 2</option>
-                <option value="sirket3">Şirket 3</option>
-                <option value="sirket3">Şirket 4</option>
+                <option value="sirket1">ABC Şirketi</option>
+                <option value="sirket2">XYZ Şirketi</option>
+                <option value="sirket3">PQR Şirketi</option>
+                <option value="sirket3">DEF Şirketi</option>
             </select>
         </div>
 
         <form th:action="@{/logout}" method="post">
-            <input type="submit" value="Sign Out" class="logoff-button" />
+            <input type="submit" value="Çıkış Yap" class="logoff-button" />
         </form>
     </nav>
 

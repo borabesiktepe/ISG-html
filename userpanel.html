@@ -29,15 +29,15 @@
             <label>Çalışma alanları</label>
             <select>
                 <option value="" disabled selected>Seçeneğinizi seçin</option>
-                <option value="sirket1">Şirket 1</option>
-                <option value="sirket2">Şirket 2</option>
-                <option value="sirket3">Şirket 3</option>
-                <option value="sirket3">Şirket 4</option>
+                <option value="">ABC Şirketi</option>
+                <option value="">XYZ Şirketi</option>
+                <option value="">PQR Şirketi</option>
+                <option value="">DEF Şirketi</option>
             </select>
         </div>
 
         <form th:action="@{/logout}" method="post">
-            <input type="submit" value="Sign Out" class="logoff-button" />
+            <input type="submit" value="Çıkış Yap" class="logoff-button" />
         </form>
     </nav>
     
@@ -47,16 +47,16 @@
             <div class="workplace-management">
                 <h2>Çalışma Alanlarım</h2>
                 <ul>
-                    <li>Şirket 1</li>
-                    <li>Şirket 2</li>
-                    <li>Şirket 3</li>
-                    <li>Şirket 4</li>
+                    <li>ABC Şirketi</li>
+                    <li>XYZ Şirketi</li>
+                    <li>PQR Şirketi</li>
+                    <li>DEF Şirketi</li>
                 </ul>
             </div>
             <div class="workplace-controls">
-                <input type="text" placeholder="İş yeri adı giriniz">
-                <a href="http://">Ekle</a>
-                <a href="http://">Çıkar</a>
+                <input type="text" placeholder="Çalışma alanı adı giriniz">
+                <button class="add">Ekle</button>
+                <button class="remove">Çıkar</button>
             </div>
             <div class="bottom-menu">
                 <div class="training-management">
@@ -77,8 +77,8 @@
 
                 <div class="notes">
                     <h2>Notlarım</h2>
-                    <textarea></textarea>
-                    <a href="http://">Kaydet</a>
+                    <textarea maxlength="250"></textarea>
+                    <button>Kaydet</button>
                 </div>
             </div>
         </div>

@@ -148,17 +148,8 @@ nav {
 
 .training-controls {
     margin-top: 20px;
-    display: flex;
 }
 
-.training-controls p {
-    font-size: 16px;
-    border-radius: 20px;
-    align-self: center;
-    margin-right: 25px;
-}
-
-.training-controls input[type=file],
 .training-controls input[type=submit] {
     cursor: pointer;
     text-decoration: none;
@@ -168,7 +159,13 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 35px;
+}
+
+.training-controls input[type=file] {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
 .contact-section {

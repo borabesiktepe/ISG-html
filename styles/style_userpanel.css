@@ -159,12 +159,16 @@ nav {
     width: 500px;
 }
 
-.workplace-controls a {
+.workplace-controls button {
+    cursor: pointer;
     text-decoration: none;
     color: black;
+    font-family: 'Montserrat', monospace;
+    font-size: 16px;
     background-color: #FFC20D;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    border: none;
     padding: 20px 70px;
 }
 
@@ -190,8 +194,8 @@ nav {
     background: #FFFFFF;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 412px;
     overflow-y: scroll;
+    height: 204px;
     max-height: 204px;
 }
 
@@ -202,17 +206,8 @@ nav {
 
 .training-controls {
     margin-top: 20px;
-    display: flex;
 }
 
-.training-controls p {
-    font-size: 16px;
-    border-radius: 20px;
-    align-self: center;
-    margin-right: 25px;
-}
-
-.training-controls input[type=file],
 .training-controls input[type=submit] {
     cursor: pointer;
     text-decoration: none;
@@ -222,7 +217,13 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 35px;
+}
+
+.training-controls input[type=file] {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
 .notes {
@@ -241,16 +242,19 @@ nav {
     resize: none;
     background-color: #FFEDB7;
     border-radius: 20px;
+    border: none;
     padding: 28px 38px;
     font-size: 16px;
 }
 
-.notes a {
+.notes button {
+    cursor: pointer;
     text-decoration: none;
     color: black;
     background-color: #FFC20D;
     font-size: 16px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border: none;
     border-radius: 20px;
     padding: 20px;
     width: fit-content;
