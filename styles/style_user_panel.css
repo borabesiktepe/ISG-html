@@ -147,8 +147,7 @@ nav {
 
 .todolist-controls input[type=text] {
     border-radius: 20px;
-    border-style: solid;
-    border-color: #FFC20D;
+    border: 2px solid #FFC20D;
     font-size: 16px;
     padding: 15px 20px;
 }

@@ -12,16 +12,17 @@ body {
 
 nav {
     position: fixed;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-    width: 340px;
+    width: 320px;
     background: #FFC20D;
     border-radius: 0px 60px 60px 0px;
 }
 
-.user-button {
-    margin: 32px 0 0 23px;
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 32px;
 }
 
 .user-button i {
@@ -33,17 +34,11 @@ nav {
     text-transform: uppercase;
     font-size: 20px;
     color: black;
-    margin-left: 25px;
     font-weight: bolder;
 }
 
 .training-button {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    width: fit-content;
-    padding: 28px 100px;
-    margin: 88px 28px 0 28px;
+    margin-top: 84px;
 }
 
 .training-button a {
@@ -51,15 +46,14 @@ nav {
     color: black;
     font-size: 16px;
     font-weight: bold;
+    padding: 28px 82px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .risk-button {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    width: fit-content;
-    padding: 28px 57px;
-    margin: 38px 28px 0 28px;
+    margin-top: 84px;
 }
 
 .risk-button a {
@@ -67,6 +61,10 @@ nav {
     color: black;
     font-size: 16px;
     font-weight: bold;
+    padding: 28px 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .workplace-select {
@@ -179,12 +177,15 @@ nav {
     margin-top: 20px;
 }
 
-.input-box input[type=text] {
+.input-box label {
     font-size: 16px;
-    padding: 5px;
-    border-radius: 10px;
-    border-color: #FFC20D;
-    border-style: solid;
+    margin-bottom: 4px;
+}
+
+.input-box input[type=text] {
+    border-radius: 20px;
+    border: 2px solid #FFC20D;
+    padding: 15px 20px;
 }
 
 .contact-section button {
