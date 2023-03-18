@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style_user_panel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Panelim</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <div class="user-button">
+                <a href="http://">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    John Doe
+                </a>
+            </div>
+
+            <div class="create-workplace-button">
+                <a href="http://">Çalışma Alanı Oluştur</a>
+            </div>
+
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Çıkış Yap" class="logoff-button" />
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Panelim</h1>
+            <div class="workplace-management">
+                <h2>Çalışma Alanlarım</h2>
+                <ul>
+                    <li>ABC Şirketi</li>
+                    <li>XYZ Şirketi</li>
+                    <li>PQR Şirketi</li>
+                    <li>DEF Şirketi</li>
+                </ul>
+            </div>
+            <div class="bottom-menu">
+                <div class="todolist-management">
+                    <h2>Yapılacaklar Listem</h2>
+                    <ul>
+                        <li>Yapılacak 1</li>
+                        <li>Yapılacak 2</li>
+                        <li>Yapılacak 3</li>
+                        <li>Yapılacak 4</li>
+                    </ul>
+                    <div class="todolist-controls">
+                        <input type="text" name="todoitem" placeholder="Madde ekleyin">
+                        <div class="todolist-buttons">
+                            <button class="add">Ekle</button>
+                            <button class="clear">Temizle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notes">
+                    <h2>Notlarım</h2>
+                    <textarea maxlength="250"></textarea>
+                    <button>Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
