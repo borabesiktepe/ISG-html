@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style_create_workplace_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Çalışma Alanı Oluştur</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <div class="user-button">
+                <a href="http://">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    John Doe
+                </a>
+            </div>
+
+            <div class="create-workplace-button">
+                <a href="http://">Çalışma Alanı Oluştur</a>
+            </div>
+
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Çıkış Yap" class="logoff-button" />
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Çalışma Alanı Oluştur</h1>
+            <p>Her şirket için özel çalışma alanları oluşturun.</p>
+            <form>
+                <input type="text" name="workplaceName" placeholder="Adını giriniz" required>
+                <button type="submit">Oluştur</button>
+            </form>
+        </div>
+    </main>
+</body>
