@@ -5,31 +5,50 @@ const trainingButton = document.querySelector(".training-bottom button");
 const selectedItem = document.querySelector(".selected-file");
 const pdfFrame = document.querySelector("iframe");
 
-trainingButton.addEventListener("click", () => {
-    var ele = document.getElementsByName('file');
-
-    for (i = 0; i < ele.length; i++) {
-
-        if (ele[i].checked) {
-            selectedItem.innerHTML = "Seçilen dosya: " + ele[i].value;
-            pdfFrame.src = `/files/${ele[i].value}`;
-        }
+var json = [
+    {
+        "id": 1,
+        "name": "Eğitim1.pdf",
+        "userId": 1
+    },
+    {
+        "id": 2,
+        "name": "Eğitim2.pdf",
+        "userId": 1
+    },
+    {
+        "id": 1,
+        "name": "Eğitim3.pdf",
+        "userId": 1
+    },
+    {
+        "id": 1,
+        "name": "Eğitim4.pdf",
+        "userId": 1
     }
-})
+];
 
-
-const buttonAdd = document.querySelector(".add");
-
-buttonAdd.addEventListener("click", () => {
+json.forEach(workplace => {
     var radioButton = document.createElement('input');
     radioButton.type = 'radio';
     radioButton.name = 'file';
-    radioButton.value = 'Eğitim4.pdf';
-
-    console.log(radioButton);
+    radioButton.value = workplace.name;
 
     var trainingItem = document.createElement('li');
-    trainingItem.insertAdjacentHTML("beforeend", "Eğitim4.pdf");
+    trainingItem.insertAdjacentHTML("beforeend", workplace.name);
     trainingItem.appendChild(radioButton);
     trainingList.appendChild(trainingItem);
+});
+
+//IFRAME'DE PDF GÖRÜNTÜLEME
+trainingButton.addEventListener("click", () => {
+    var element = document.getElementsByName('file');
+
+    for (i = 0; i < element.length; i++) {
+
+        if (element[i].checked) {
+            selectedItem.innerHTML = "Seçilen dosya: " + element[i].value;
+            pdfFrame.src = `/files/${element[i].value}`;
+        }
+    }
 })
