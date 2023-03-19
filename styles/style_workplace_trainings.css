@@ -127,29 +127,32 @@ nav {
 
 .training-controls {
     margin-top: 18px;
-    width: 912px;
+    width: 980px;
 }
 
 .training-controls ul {
+    flex-direction: column;
     margin-top: 28px;
     list-style: none;
     background: #FFFFFF;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 900px;
+    width: auto;
     min-height: 150px;
     max-height: 200px;
     overflow-y: scroll;
 }
 
 .training-controls li {
+    display: flex;
+    flex-wrap: wrap;
     padding: 16px 12px;
     font-size: 16px;
 }
 
 input[type=radio] {
     margin-right: 10px;
-
+    order: -1;
 }
 
 .training-bottom {
