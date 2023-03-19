@@ -52,18 +52,22 @@
                         <li>Yapılacak 4</li>
                     </ul>
                     <div class="todolist-controls">
-                        <input type="text" name="todoitem" placeholder="Madde ekleyin">
-                        <div class="todolist-buttons">
-                            <button class="add">Ekle</button>
-                            <button class="clear">Temizle</button>
-                        </div>
+                        <form id="todo-form">
+                            <input type="text" name="todoitem" placeholder="Madde ekleyin" required>
+                            <div class="todolist-buttons">
+                                <button class="add" type="submit">Ekle</button>
+                                <button class="clear">Temizle</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
                 <div class="notes">
                     <h2>Notlarım</h2>
-                    <textarea maxlength="250"></textarea>
-                    <button>Kaydet</button>
+                    <form id="notes-form">
+                        <textarea name="note" maxlength="250"></textarea>
+                        <button type="submit">Kaydet</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -37,6 +37,10 @@ nav {
     font-weight: bolder;
 }
 
+.userId {
+    display: none;
+}
+
 .create-workplace-button {
     margin-top: 84px;
 }
@@ -59,6 +63,7 @@ nav {
     color: #FF0000;
     font-size: 16px;
     font-family: 'Montserrat', monospace;
+    font-weight: bold;
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -97,6 +102,7 @@ nav {
     border-radius: 8px;
     width: 900px;
     max-height: 200px;
+    min-height: 40px;
     overflow-y: scroll;
 }
 
@@ -124,7 +130,7 @@ nav {
 }
 
 .todolist-management ul {
-    list-style: none;
+    list-style-type: circle;
     background: #FFFFFF;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -136,6 +142,7 @@ nav {
 
 .todolist-management li {
     padding: 16px 12px;
+    margin-left: 40px;
     font-size: 16px;
 }
 
@@ -145,11 +152,13 @@ nav {
     flex-direction: column;
 }
 
-.todolist-controls input[type=text] {
+#todo-form input[type=text] {
     border-radius: 20px;
-    border: 2px solid #FFC20D;
+    border-style: solid;
+    border-color: #FFC20D;
     font-size: 16px;
     padding: 15px 20px;
+    width: 100%;
 }
 
 .todolist-buttons {
@@ -188,6 +197,11 @@ nav {
     margin-bottom: 18px;
 }
 
+#notes-form {
+    display:flex;
+    flex-direction: column;
+}
+
 .notes textarea {
     width: 416px;
     height: 204px;
@@ -208,7 +222,7 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 35px;
     width: fit-content;
     margin-top: 20px;
 }

@@ -59,6 +59,7 @@ nav {
     color: #FF0000;
     font-size: 16px;
     font-family: 'Montserrat', monospace;
+    font-weight: bold;
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
