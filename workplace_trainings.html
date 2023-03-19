@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style_workplace_trainings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>ABC Şirketi Çalışma Alanı</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <div class="user-button">
+                <a href="http://">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    John Doe
+                </a>
+            </div>
+
+            <div class="training-button">
+                <a href="http://">Eğitimler</a>
+            </div>
+
+            <div class="risk-button"><a href="http://">Risk Değerlendirme</a></div>
+
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Çıkış Yap" class="logoff-button" />
+            </form>
+        </div>
+
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Çıkış Yap" class="logoff-button" />
+        </form>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>ABC Şirketi Eğitimler</h1>
+            <div class="training-controls">
+                <h2>Dosya Seçin</h2>
+                <ul>
+                    <li><input type="radio" name="file" value="Eğitim1.pdf">Eğitim1.pdf</li>
+                    <li><input type="radio" name="file" value="Eğitim2.pdf">Eğitim2.pdf</li>
+                    <li><input type="radio" name="file" value="Eğitim3.pdf">Eğitim3.pdf</li>
+                </ul>
+                <div class="training-bottom">
+                    <p class="selected-file">Test</p>
+                    <button>Sunum Yap</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/script_workplace_trainings.js"></script>
+</body>
+
+</html>
