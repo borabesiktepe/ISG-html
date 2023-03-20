@@ -5,6 +5,8 @@ const trainingButton = document.querySelector(".training-bottom button");
 const selectedItem = document.querySelector(".selected-file");
 const pdfFrame = document.querySelector("iframe");
 
+pdfFrame.style.display = "none";
+
 var json = [
     {
         "id": 1,
@@ -17,14 +19,14 @@ var json = [
         "userId": 1
     },
     {
-        "id": 1,
+        "id": 3,
         "name": "Eğitim3.pdf",
-        "userId": 1
+        "userId": 2
     },
     {
-        "id": 1,
-        "name": "Eğitim4.pdf",
-        "userId": 1
+        "id": 4,
+        "name": "Slayt1.pptx",
+        "userId": 2
     }
 ];
 
@@ -42,10 +44,11 @@ json.forEach(workplace => {
 
 //IFRAME'DE PDF GÖRÜNTÜLEME
 trainingButton.addEventListener("click", () => {
+    pdfFrame.style.display = "";
+
     var element = document.getElementsByName('file');
 
     for (i = 0; i < element.length; i++) {
-
         if (element[i].checked) {
             selectedItem.innerHTML = "Seçilen dosya: " + element[i].value;
             pdfFrame.src = `/files/${element[i].value}`;

@@ -72,3 +72,13 @@ a {
     border-radius: 20px;
     margin-top: 18px;
 }
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    bottom: 8px;
+    padding: 20px;
+    font-size: 10px;
+}
