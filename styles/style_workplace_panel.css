@@ -119,10 +119,14 @@ nav {
     font-weight: bolder;
 }
 
-
 .container {
     padding-top: 36px;
     padding-left: 400px;
+}
+
+.workplace-description {
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 .trainings-management {

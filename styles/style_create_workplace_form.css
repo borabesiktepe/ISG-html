@@ -99,6 +99,7 @@ input[type=text] {
     border-radius: 14px;
     padding: 10px;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 form button {
@@ -110,5 +111,4 @@ form button {
     padding: 20px 30px;
     width: fit-content;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
 }
