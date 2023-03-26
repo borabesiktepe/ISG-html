@@ -111,6 +111,15 @@ nav {
     font-size: 16px;
 }
 
+.workplace-management a {
+    text-decoration: none;
+    color: black;
+}
+
+.workplace-management a:hover {
+    color: #FFC20D;
+}
+
 .bottom-menu {
     margin-top: 40px;
 }
@@ -198,7 +207,7 @@ nav {
 }
 
 #notes-form {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 

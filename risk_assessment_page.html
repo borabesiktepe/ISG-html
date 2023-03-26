@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_risk_assessment.css">
+    <title>Risk Değerlendirme</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <div class="user-button">
+                <a href="http://">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    John Doe
+                </a>
+            </div>
+
+            <div class="training-button">
+                <a href="">Eğitimler</a>
+            </div>
+
+            <div class="risk-button"><a href="">Risk Değerlendirme</a></div>
+
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Çıkış Yap" class="logoff-button" />
+            </form>
+        </div>
+
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Çıkış Yap" class="logoff-button" />
+        </form>
+    </nav>
+    <div class="container">
+        <h1>Risk Değerlendirme</h1>
+        <form id="risk-assesment">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Genel Tehlike Adı</th>
+                    <th>Yer/Ekipman</th>
+                    <th>Mevcut Tehlikeler</th>
+                    <th>Oluşacak Riskler</th>
+                    <th>Mevcut Önlemler</th>
+                    <th>Maruz Kalanlar</th>
+                    <th class="vertical">Şiddet</th>
+                    <th class="vertical">Olasılık</th>
+                    <th class="vertical">Risk</th>
+                    <th>Alınacak Tedbirler</th>
+                    <th class="vertical">S. Şiddet</th>
+                    <th class="vertical">S. Olasılık</th>
+                    <th class="vertical">S. Risk</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Genel</td>
+                    <td>Çalışma ofisleri</td>
+                    <td>Kabloların düzensiz olmaları sonucu elektrik çarpması, kablolara takılma</td>
+                    <td>Yaralanma, ölüm</td>
+                    <td></td>
+                    <td>Çalışanlar</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>15</td>
+                    <td>Elektrik kablolarının yangın ve patlama etkisi yaratmayacak şekilde kaza riskine karşı
+                        korunmalıdır.</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+            </table>
+            <div class="table-inputs">
+                <input type="text" name="tehlikeAdi" id="tehlikeAdi" placeholder="Genel Tehlike Adı">
+                <input type="text" name="yerEkipman" id="yerEkipman" placeholder="Yer/Ekipman">
+                <input type="text" name="mevcutTehlikeler" id="mevcutTehlikeler" placeholder="Mevcut Tehlikeler">
+                <input type="text" name="olusacakRiskler" id="olusacakRiskler" placeholder="Oluşacak Riskler">
+                <input type="text" name="mevcutOnlemler" id="mevcutOnlemler" placeholder="Mevcut Önlemler">
+                <input type="text" name="maruzKalanlar" id="maruzKalanlar" placeholder="Maruz Kalanlar">
+                <input type="number" name="siddet" id="siddet" placeholder="Şiddet" min="1" max="25">
+                <input type="number" name="olasilik" id="olasilik" placeholder="Olasılık" min="1" max="25">
+                <input type="number" name="risk" id="risk" placeholder="Risk" min="1" max="25">
+                <input type="text" name="alinacakTedbirler" id="alinacakTedbirler" placeholder="Alınacak Tedbirler">
+                <input type="number" name="sSiddet" id="sSiddet" placeholder="S. Şiddet" min="1" max="25">
+                <input type="number" name="sOlasilik" id="sOlasilik" placeholder="S. Olasılık" min="1" max="25">
+                <input type="number" name="sRisk" id="sRisk" placeholder="S. Risk" min="1" max="25">
+            </div>
+            <button type="submit">Ekle</button>
+        </form>
+    </div>
+    <script src="scripts/script_risk_assessment"></script>
+</body>
+
+</html>

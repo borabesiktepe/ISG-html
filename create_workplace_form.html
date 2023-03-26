@@ -34,11 +34,12 @@
         <div class="container">
             <h1>Çalışma Alanı Oluştur</h1>
             <p>Her şirket için özel çalışma alanları oluşturun.</p>
-            <form>
-                <input type="text" name="workplaceName" placeholder="Adını giriniz" required>
-                <input type="text" name="workplaceDescription" placeholder="Açıklamasını giriniz" required>
+            <form id="form" method="post">
+                <input id="name" type="text" name="workplaceName" placeholder="Adını giriniz" required>
+                <input id="description" type="text" name="workplaceDescription" placeholder="Açıklamasını giriniz" required>
                 <button type="submit">Oluştur</button>
-            </form>
+            </form>        
         </div>
     </main>
+    <script src="scripts/script_create_workplace.js"></script>
 </body>

@@ -124,43 +124,32 @@ nav {
     padding-left: 400px;
 }
 
-.training-controls {
-    margin-top: 18px;
-    width: 980px;
-}
-
-.training-controls ul {
-    flex-direction: column;
-    margin-top: 28px;
-    list-style: none;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: auto;
-    min-height: 150px;
-    max-height: 200px;
-    overflow-y: scroll;
-}
-
-.training-controls li {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 16px 12px;
+table {
+    border-collapse: collapse;
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 16px;
 }
 
-input[type=radio] {
-    margin-right: 10px;
-    order: -1;
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-.training-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #FFC20D;
 }
 
-.training-bottom button {
+.vertical {
+    writing-mode: vertical-lr;
+}
+
+button {
     cursor: pointer;
     background: #FFC20D;
     font-family: 'Montserrat', monospace;
@@ -170,9 +159,4 @@ input[type=radio] {
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-}
-
-iframe {
-    margin-top: 62px;
-    align-self: center;
 }
