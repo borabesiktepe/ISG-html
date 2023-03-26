@@ -149,6 +149,27 @@ th {
     writing-mode: vertical-lr;
 }
 
+.table-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input[type=text],
+input[type=number] {
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid #FFC20D;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
 button {
     cursor: pointer;
     background: #FFC20D;
