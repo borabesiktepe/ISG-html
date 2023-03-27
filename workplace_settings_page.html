@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style_workplace_settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>ABC Şirketi Ayarlar</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <div class="user-button">
+                <a href="user_panel.html">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    John Doe
+                </a>
+            </div>
+
+            <div class="training-button">
+                <a href="workplace_trainings.html">Eğitimler</a>
+            </div>
+
+            <div class="risk-button"><a href="">Risk Değerlendirme</a></div>
+
+            <div class="settings-button"><a href="">Ayarlar</a></div>
+
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Çıkış Yap" class="logoff-button" />
+            </form>
+        </div>
+
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Çıkış Yap" class="logoff-button" />
+        </form>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>ABC Şirketi Ayarlar</h1>
+            <form id="form-update">
+                <p>Çalışma alanı adını veya açıklamasını değiştirin</p>
+                <input id="name" type="text" name="workplaceName" placeholder="Yeni adını giriniz" required>
+                <input id="description" type="text" name="workplaceDescription" placeholder="Yeni açıklamasını giriniz"
+                    required>
+                <button type="submit">Güncelle</button>
+            </form>
+
+            <form id="form-delete">
+                <p>Çalışma alanını silin</p>
+                <div class="check-box">
+                    <input type="checkbox" name="deleteConfirm" id="deleteConfirm" required>
+                    <label for="deleteConfirm">Çalışma alanını silmek istediğimden eminim.</label>
+                </div>
+                <button type="submit">Sil</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
