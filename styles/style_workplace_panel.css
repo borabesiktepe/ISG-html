@@ -71,29 +71,19 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
-.workplace-select {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-left: 28px;
+.settings-button {
+    margin-top: 84px;
 }
 
-.workplace-select label {
+.settings-button a {
+    text-decoration: none;
+    color: black;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.workplace-select select {
-    background: #FFFFFF;
-    border: none;
+    padding: 28px 92px;
+    border-radius: 20px;
+    background-color: white;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(102, 102, 102, 1);
-    padding: 20px 16px 20px 16px;
-    width: 275px;
 }
 
 .logoff-button {
@@ -107,7 +97,7 @@ nav {
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 28px 90px;
+    padding: 28px 82px;
     left: 28px;
     bottom: 50px;
 }

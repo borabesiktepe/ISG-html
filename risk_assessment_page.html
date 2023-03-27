@@ -14,17 +14,19 @@
     <nav>
         <div class="nav-buttons">
             <div class="user-button">
-                <a href="http://">
+                <a href="user_panel.html">
                     <i class="fa-solid fa-helmet-safety"></i>
                     John Doe
                 </a>
             </div>
 
             <div class="training-button">
-                <a href="">Eğitimler</a>
+                <a href="workplace_trainings.html">Eğitimler</a>
             </div>
 
             <div class="risk-button"><a href="">Risk Değerlendirme</a></div>
+
+            <div class="settings-button"><a href="">Ayarlar</a></div>
 
             <form th:action="@{/logout}" method="post">
                 <input type="submit" value="Çıkış Yap" class="logoff-button" />
@@ -35,6 +37,7 @@
             <input type="submit" value="Çıkış Yap" class="logoff-button" />
         </form>
     </nav>
+    
     <div class="container">
         <h1>Risk Değerlendirme</h1>
         <div class="risk-matris">
