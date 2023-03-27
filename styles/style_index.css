@@ -52,25 +52,42 @@ h1 {
     margin-left: 25%;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.login {
+    margin-bottom: 34px;
 }
 
-.login {
-    background-color: #FFC20D;
-    padding: 30px 90px;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+.login a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 28px 92px;
     border-radius: 20px;
-    margin-bottom: 18px;
+    background-color: #FFC20D;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.login a:hover {
+    background-color: #e9af00;
 }
 
 .signup {
-    background-color: white;
-    padding: 30px 60px;
-    border: 2px solid #FFC20D;
+    margin-top: 38px;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 28px 68px;
     border-radius: 20px;
-    margin-top: 18px;
+    background-color: white;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.signup a:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 footer {
