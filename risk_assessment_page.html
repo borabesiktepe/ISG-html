@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style_risk_assessment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Risk Değerlendirme</title>
 </head>
 
@@ -36,11 +37,18 @@
     </nav>
     <div class="container">
         <h1>Risk Değerlendirme</h1>
+        <div class="risk-matris">
+            <a href="https://i.hizliresim.com/32yzm59.png" target="_blank">
+                <i class="fa-solid fa-circle-info"></i>
+                Risk Matrisi
+            </a>
+        </div>
+
         <form id="risk-assesment">
-            <table>
+            <table id="risk-table">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>Sıra No</th>
                         <th>Genel Tehlike Adı</th>
                         <th>Yer/Ekipman</th>
                         <th>Mevcut Tehlikeler</th>
@@ -58,32 +66,124 @@
                 </thead>
                 <tbody id="table_body">
                     <tr>
-
                     </tr>
                 </tbody>
             </table>
+
+            <p class="input-desc">Tabloya veri ekleyin</p>
             <div class="table-inputs">
+                <input type="hidden" id="workplaceId" th:value="${workplace.id}">
                 <div class="left">
-                    <input type="text" name="tehlikeAdi" id="tehlikeAdi" placeholder="Genel Tehlike Adı">
-                    <input type="text" name="yerEkipman" id="yerEkipman" placeholder="Yer/Ekipman">
-                    <input type="text" name="mevcutTehlikeler" id="mevcutTehlikeler" placeholder="Mevcut Tehlikeler">
-                    <input type="text" name="olusacakRiskler" id="olusacakRiskler" placeholder="Oluşacak Riskler">
-                    <input type="text" name="mevcutOnlemler" id="mevcutOnlemler" placeholder="Mevcut Önlemler">
-                    <input type="text" name="maruzKalanlar" id="maruzKalanlar" placeholder="Maruz Kalanlar">
-                    <input type="number" name="siddet" id="siddet" placeholder="Şiddet" min="1" max="25">
-                    <input type="number" name="olasilik" id="olasilik" placeholder="Olasılık" min="1" max="25">
-                    <input type="number" name="risk" id="risk" placeholder="Risk" min="1" max="25">
+                    <label for="tehlikeAdi">Genel Tehlike Adı</label>
+                    <input type="text" name="tehlikeAdi" id="tehlikeAdi">
+
+                    <label for="yerEkipman">Yer/Ekipman</label>
+                    <input type="text" name="yerEkipman" id="yerEkipman" list="yerErkipman-list">
+                    <datalist id="yerErkipman-list">
+                        <option value="Makina atölyesi">
+                        <option value="Depo alanı">
+                        <option value="İnşaat alanı">
+                        <option value="Elektrik odası">
+                        <option value="Laboratuvar">
+                        <option value="İş Ofisi">
+                        <option value="Mutfak">
+                        <option value="Paketleme Bölümü">
+                        <option value="Veri Merkezi">
+                        <option value="Montaj Hattı">
+                        <option value="Yangın Merdiveni">
+                        <option value="Forklift">
+                        <option value="Vinç">
+                        <option value="Yüksek Gerilim anahtarı">
+                        <option value="Kimyasal Fırın">
+                        <option value="Kesme makinesi">
+                        <option value="Kompresör">
+                        <option value="Merdiven">
+                        <option value="Jeneratör">
+                        <option value="Klima Sistemi">
+                        <option value="Asansör">
+                    </datalist>
+
+                    <label for="mevcutTehlikeler">Mevcut Tehlikeler</label>
+                    <input type="text" name="mevcutTehlikeler" id="mevcutTehlikeler" list="mevcutTehlikeler-list">
+                    <datalist id="mevcutTehlikeler-list">
+                        <option value="Yüksekten düşme">
+                        <option value="Kesici aletler">
+                        <option value="Kimyasallar">
+                        <option value="Elektrik">
+                        <option value="İskeleler">
+                        <option value="Yanıcı maddeler">
+                        <option value="Yük taşıma">
+                        <option value="Gürültü">
+                        <option value="Radyasyon">
+                        <option value="Yetersiz aydınlatma">
+                        <option value="Termal tehlikeler">
+                        <option value="Hava kalitesi">
+                        <option value="Zeminler">
+                    </datalist>
+
+                    <label for="olusacakRiskler">Oluşacak Riskler</label>
+                    <input type="text" name="olusacakRiskler" id="olusacakRiskler" list="olusacakRiskler-list">
+                    <datalist id="olusacakRiskler-list">
+                        <option value="Yükseklikten düşme">
+                        <option value="Malzeme düşmesi">
+                        <option value="Elektrik çarpması">
+                        <option value="Zehirlenme">
+                        <option value="İş kazaları">
+                        <option value="İşitme kaybı">
+                        <option value="Göz yaralanmaları">
+                        <option value="Düşme">
+                        <option value="Kesilmeler ve yaralanmalar">
+                        <option value="Sıcaklık değişimleri">
+                        <option value="Alerjik reaksiyonlar">
+                        <option value="Çevresel faktörler">
+                    </datalist>
+
+                    <label for="mevcutOnlemler">Mevcut Önlemler</label>
+                    <input type="text" name="mevcutOnlemler" id="mevcutOnlemler">
+
+                    <label for="maruzKalanlar">Maruz Kalanlar</label>
+                    <input type="text" name="maruzKalanlar" id="maruzKalanlar" list="maruzKalanlar-list">
+                    <datalist id="maruzKalanlar-list">
+                        <option value="Çalışanlar">
+                        <option value="İşçiler">
+                        <option value="Ziyaretçiler">
+                        <option value="Yükleniciler">
+                        <option value="Temizlik görevlileri">
+                        <option value="Bakım görevlileri">
+                        <option value="Güvenlik görevlileri">
+                        <option value="Mühendisler">
+                        <option value="Yöneticiler">
+                        <option value="Müşteriler">
+                        <option value="İlk yardım görevlileri">
+                        <option value="Ziyaretçiler">
+                        <option value="Araştırmacılar">
+                        <option value="İşyeri dışındakiler">
+                    </datalist>
                 </div>
                 <div class="right">
-                    <input type="text" name="alinacakTedbirler" id="alinacakTedbirler" placeholder="Alınacak Tedbirler">
-                    <input type="number" name="sSiddet" id="sSiddet" placeholder="S. Şiddet" min="1" max="25">
-                    <input type="number" name="sOlasilik" id="sOlasilik" placeholder="S. Olasılık" min="1" max="25">
-                    <input type="number" name="sRisk" id="sRisk" placeholder="S. Risk" min="1" max="25">
+                    <label for="siddet">Şiddet</label>
+                    <input type="number" name="siddet" id="siddet" placeholder="(1-15)" min="1" max="25">
+
+                    <label for="olasilik">Olasılık</label>
+                    <input type="number" name="olasilik" id="olasilik" placeholder="(1-15)" min="1" max="25">
+
+                    <label for="alinacakTedbirler">Alınacak Tedbirler</label>
+                    <input type="text" name="alinacakTedbirler" id="alinacakTedbirler">
+
+                    <label for="sSiddet">Son Şiddet</label>
+                    <input type="number" name="sSiddet" id="sSiddet" placeholder="(1-15)" min="1" max="25">
+
+                    <label for="sOlasilik">Son Olasılık</label>
+                    <input type="number" name="sOlasilik" id="sOlasilik" placeholder="(1-15)" min="1" max="25">
                 </div>
             </div>
+
             <button type="submit">Ekle</button>
         </form>
+
+        <button onclick="exportToExcel('xlsx')">Excel olarak kaydet</button>
     </div>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
     <script src="scripts/script_risk_assessment.js"></script>
 </body>
 

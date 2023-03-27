@@ -124,10 +124,24 @@ nav {
     padding-left: 400px;
 }
 
+.risk-matris {
+    margin-top: 24px;
+}
+
+.risk-matris a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.risk-matris a:hover {
+    color: #FFC20D;
+}
+
 table {
     border-collapse: collapse;
+    margin-top: 12px;
     margin-right: 120px;
-    margin-top: 30px;
     margin-bottom: 30px;
     font-size: 16px;
 }
@@ -149,6 +163,10 @@ th {
     writing-mode: vertical-lr;
 }
 
+tr:hover {
+    background-color: #fff1c7;
+}
+
 .table-inputs {
     display: flex;
     gap: 20px;
@@ -161,13 +179,22 @@ th {
     width: 500px;
 }
 
+.input-desc {
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 16px;
+}
+
 input[type=text],
 input[type=number] {
     margin-bottom: 10px;
     border: 0;
     border-bottom: 2px solid #FFC20D;
     font-size: 14px;
-    padding: 15px 0;
+    padding: 15px 5px;
 }
 
 button {
@@ -180,4 +207,5 @@ button {
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    margin-top: 12px;
 }
