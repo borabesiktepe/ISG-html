@@ -200,6 +200,7 @@ input[type=number] {
     border: 0;
     border-bottom: 2px solid #FFC20D;
     font-size: 14px;
+    font-family: 'Montserrat', monospace;
     padding: 15px 0;
 }
 
@@ -208,10 +209,14 @@ button {
     background: #FFC20D;
     font-family: 'Montserrat', monospace;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     padding: 20px 60px;
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin-top: 12px;
+}
+
+button:hover {
+    background: #e9af00;
 }

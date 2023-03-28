@@ -171,11 +171,15 @@ input[type=radio] {
     background: #FFC20D;
     font-family: 'Montserrat', monospace;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     padding: 20px 60px;
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+}
+
+.training-bottom button:hover {
+    background: #e6ac00;
 }
 
 iframe {

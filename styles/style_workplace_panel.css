@@ -203,6 +203,8 @@ nav {
     border-radius: 20px;
     border: 2px solid #FFC20D;
     padding: 15px 20px;
+    font-family: 'Montserrat', monospace;
+    font-size: 14px;
 }
 
 .contact-section button {
