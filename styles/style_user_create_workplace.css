@@ -37,6 +37,10 @@ nav {
     font-weight: bolder;
 }
 
+.user-button a:hover {
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.37);
+}
+
 .create-workplace-button {
     margin-top: 84px;
 }
@@ -84,7 +88,7 @@ p {
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 16px;
-    margin-top: 74px;
+    margin-top: 34px;
 }
 
 form {
@@ -108,7 +112,17 @@ form button {
     border: none;
     border-radius: 20px;
     font-size: 16px;
+    font-family: 'Montserrat', monospace;
+    font-weight: bold;
     padding: 20px 30px;
     width: fit-content;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background-color: #f0b400;
+}
+
+#message {
+    font-weight: bold;
 }

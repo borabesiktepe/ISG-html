@@ -41,6 +41,10 @@ nav {
     font-weight: bolder;
 }
 
+.user-button a:hover {
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.37);
+}
+
 .training-button {
     margin-top: 84px;
 }
@@ -54,6 +58,10 @@ nav {
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.training-button a:hover {
+    color: #FFC20D;
 }
 
 .risk-button {
@@ -71,6 +79,10 @@ nav {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
+.risk-button a:hover {
+    color: #FFC20D;
+}
+
 .settings-button {
     margin-top: 84px;
 }
@@ -84,6 +96,10 @@ nav {
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.settings-button a:hover {
+    color: #FFC20D;
 }
 
 .logoff-button {
