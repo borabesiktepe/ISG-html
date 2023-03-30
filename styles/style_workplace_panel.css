@@ -136,6 +136,12 @@ nav {
     font-size: 16px;
 }
 
+#last-risk-date {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
 .trainings-management {
     margin-top: 34px;
 }
@@ -184,6 +190,11 @@ nav {
     font-size: 16px;
 }
 
+.middle-menu {
+    display: flex;
+    gap: 48px;
+}
+
 .contact-section {
     width: 625px;
     margin-top: 30px;
@@ -192,7 +203,8 @@ nav {
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-bottom: 15px;
 }
 
 .input-box label {
@@ -200,12 +212,13 @@ nav {
     margin-bottom: 4px;
 }
 
-.input-box input[type=text] {
-    border-radius: 20px;
+.input-box input[type=text],
+#cities {
     border: 2px solid #FFC20D;
-    padding: 15px 20px;
+    border-radius: 14px;
+    padding: 10px;
+    font-size: 16px;
     font-family: 'Montserrat', monospace;
-    font-size: 14px;
 }
 
 .contact-section button {
@@ -220,9 +233,44 @@ nav {
     border: none;
     border-radius: 20px;
     padding: 20px 35px;
-    margin-top: 20px;
+    margin-bottom: 12px;
 }
 
 .contact-section button:hover {
     background-color: #e9af00;
+}
+
+.workplace-settings-section {
+    margin-top: 30px;
+}
+
+#form-update {
+    width: 425px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 16px;
+}
+
+#form-update button {
+    cursor: pointer;
+    background-color: #FFC20D;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', monospace;
+    font-weight: bold;
+    padding: 20px 30px;
+    width: fit-content;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+#form-update button:hover {
+    background-color: #e4ab00;
 }
