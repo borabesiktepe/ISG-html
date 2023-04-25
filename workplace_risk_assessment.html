@@ -37,7 +37,7 @@
             <input type="submit" value="Çıkış Yap" class="logoff-button" />
         </form>
     </nav>
-    
+
     <div class="container">
         <h1>Risk Değerlendirme</h1>
         <div class="risk-matris">
@@ -46,6 +46,13 @@
                 Risk Matrisi
             </a>
         </div>
+
+        <select id="risk-select">
+            <option value="all">Tümü</option>
+            <option value="0-6">Az Tehlikeli</option>
+            <option value="8-12">Tehlikeli</option>
+            <option value="15-25">Çok Tehlikeli</option>
+          </select>
 
         <form id="risk-assesment">
             <table id="risk-table">
@@ -67,9 +74,8 @@
                         <th class="vertical">S. Risk</th>
                     </tr>
                 </thead>
-                <tbody id="table_body">
-                    <tr>
-                    </tr>
+                <tbody id="table-body">
+
                 </tbody>
             </table>
 
@@ -185,6 +191,7 @@
         </form>
 
         <button onclick="exportToExcel('xlsx')">Excel olarak kaydet</button>
+
     </div>
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
     <script src="scripts/script_risk_assessment.js"></script>

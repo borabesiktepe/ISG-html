@@ -14,7 +14,7 @@ const workplaceId = document.getElementById("workplaceId").value;
 
 //API İŞLEMLERİ
 //RİSK DEĞERLENDİRME GET İŞLEMİ
-fetch("http://localhost:8080/api/riskassesments/getall?workplaceId=11")
+fetch("http://localhost:8080/api/riskassesments/getall?workplaceId=90")
     .then((data) => {
         return data.json();
     })
@@ -43,7 +43,7 @@ fetch("http://localhost:8080/api/riskassesments/getall?workplaceId=11")
             `;
             siraNo++;
         })
-        document.getElementById("table_body").innerHTML = tableData
+        document.getElementById("table-body").innerHTML = tableData
     })
 
 //RİSK DEĞERLENDİRME POST İŞLEMİ
@@ -84,7 +84,6 @@ formRisk.addEventListener('submit', function (e) {
         .catch(error => console.error('Error:', error));
 });
 
-
 //TIKLANAN SATIRI INPUTLARA DİZME
 function printToInputs(e) {
     var tds = e.getElementsByTagName('td');
@@ -124,3 +123,40 @@ function exportToExcel(type, fn, dl) {
         XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
         XLSX.writeFile(wb, fn || ('RiskDegerlendirmeTablosu.' + (type || 'xlsx')));
 }
+
+
+
+//Risk Değerlendirme tablosunda Risk kolonuna göre filtreleme yapma
+const selectElement = document.getElementById('risk-select');
+const tableBody = document.getElementById('table-body');
+
+function filterRisk(min, max) {
+    for (let i = 0; i < tableBody.children.length; i++) {
+        const riskElement = tableBody.children[i].children[9];
+        const riskValue = parseInt(riskElement.innerText);
+        if (riskValue >= min && riskValue <= max) {
+            tableBody.children[i].style.display = '';
+        } else {
+            tableBody.children[i].style.display = 'none';
+        }
+    }
+}
+
+selectElement.addEventListener('change', function () {
+    const selectedValue = this.value;
+    switch (selectedValue) {
+        case '0-6':
+            filterRisk(0, 6);
+            break;
+        case '8-12':
+            filterRisk(8, 12);
+            break;
+        case '15-25':
+            filterRisk(15, 25);
+            break;
+        default:
+            for (let i = 0; i < tableBody.children.length; i++) {
+                tableBody.children[i].style.display = '';
+            }
+    }
+});

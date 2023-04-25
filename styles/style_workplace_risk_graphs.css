@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: all .2s ease
+}
+
+:root {
+    --primaryColor: #FFC40C;
+    --primaryColorHover: #F2B700;
+    --headerColor: #2E2E2C;
+    --whiteHover: #EEE;
+    --red: #FC0707;
+    --redHover: #D80000;
+    --shadow: 0px 4px 14px rgba(0, 0, 0, 0.1)
+}
+
+body {
+    font-family: 'Montserrat', monospace;
+    font-size: 20px
+}
+
+h1,
+a,
+button {
+    color: var(--headerColor);
+}
+
+nav {
+    position: fixed;
+    height: 100vh;
+    width: 320px;
+    background: url("https://i.hizliresim.com/gferslr.jpg");
+    background-color: var(--primaryColor);
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: var(--shadow)
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 32px
+}
+
+.user-button i {
+    margin-right: 10px
+}
+
+.user-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder
+}
+
+.user-button a:hover {
+    text-shadow: var(--shadow);
+    margin-left: 10px
+}
+
+.workplace-button {
+    margin-top: 52px;
+    width: fit-content
+}
+
+.workplace-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder
+}
+
+.workplace-button:hover {
+    text-shadow: var(--shadow);
+    margin-left: 10px
+}
+
+.training-button {
+    margin-top: 84px
+}
+
+.training-button a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 28px 82px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: var(--shadow)
+}
+
+.training-button a:hover {
+    color: var(--primaryColor)
+}
+
+.risk-button {
+    margin-top: 44px
+}
+
+.risk-button a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 28px 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: var(--shadow)
+}
+
+.risk-button a:hover {
+    color: var(--primaryColor)
+}
+
+.graph-button {
+    margin-top: 84px
+}
+
+.graph-button a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 28px 85px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: var(--shadow)
+}
+
+.graph-button a:hover {
+    color: var(--primaryColor)
+}
+
+.logoff-button {
+    position: absolute;
+    cursor: pointer;
+    background-color: #FFF;
+    color: var(--red);
+    font-size: 16px;
+    font-family: 'Montserrat', monospace;
+    font-weight: bold;
+    border: none;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    padding: 28px 82px;
+    left: 28px;
+    bottom: 50px
+}
+
+.logoff-button:hover {
+    color: var(--redHover)
+}
+
+.container {
+    padding-top: 36px;
+    padding-left: 400px;
+    padding-bottom: 36px
+}
+
+h1 {
+    margin-bottom: 20px
+}
+
+.graphs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px
+}
+
+canvas {
+    background-color: #FFF;
+    border-radius: 20px;
+    max-height: 500px;
+    max-width: 500px;
+    box-shadow: var(--shadow)
+}
+
+canvas:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2)
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+    font-size: 10px;
+}

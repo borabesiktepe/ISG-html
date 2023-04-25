@@ -20,7 +20,7 @@ nav {
     height: 100vh;
     width: 320px;
     background: #FFC20D;
-    border-radius: 0px 60px 60px 0px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .nav-buttons {
@@ -46,8 +46,24 @@ nav {
     text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.37);
 }
 
+.workplace-button {
+    margin-top: 52px;
+}
+
+.workplace-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+.workplace-button:hover {
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.37);
+}
+
 .training-button {
-    margin-top: 84px;
+    margin-top: 44px;
 }
 
 .training-button a {
@@ -131,6 +147,27 @@ nav {
     padding-left: 400px;
 }
 
+#scroll-buttons {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#scroll-buttons button {
+    padding: 20px 26px;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 120px;
+}
+
 .risk-matris {
     margin-top: 24px;
 }
@@ -143,6 +180,31 @@ nav {
 
 .risk-matris a:hover {
     color: #FFC20D;
+}
+
+.table-filters {
+    display: flex;
+    gap: 10px;
+}
+
+#risk-select,
+#yer-ekipman-select,
+#son-risk-select,
+#tehlike-select,
+#maruz-kalanlar-select {
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Montserrat', monospace;
+    padding: 15px;
+    width: 210px;
+}
+
+#filter-info {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
 }
 
 table {
@@ -162,7 +224,7 @@ th {
 th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #FFC20D;
 }
 
@@ -205,6 +267,11 @@ input[type=number] {
     padding: 15px 0;
 }
 
+#add,
+#table-buttons {
+    margin-bottom: 20px;
+}
+
 button {
     cursor: pointer;
     background: #FFC20D;
@@ -220,4 +287,13 @@ button {
 
 button:hover {
     background: #e9af00;
+}
+
+#delete {
+    background-color: #ff0d0d;
+    color: white;
+}
+
+#delete:hover {
+    background-color: #e80505;
 }

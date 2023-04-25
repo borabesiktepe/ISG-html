@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_workplace_risk_graphs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Risk Değerlendirme</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <div class="user-button">
+                <a th:href="@{/user_panel}">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    Full Name
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+
+            <div class="workplace-button">
+                <a th:href="@{/workplace_panel/} + ${workplace.id}">Workplace Name
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+
+            <div class="risk-button">
+                <a th:href="@{/riskassesment/} + ${workplace.id}">Risk Değerlendirme</a>
+            </div>
+
+            <div class="graph-button">
+                <a th:href="@{/riskgraphs/} + ${workplace.id}">Grafikler</a>
+            </div>
+
+            <div class="training-button">
+                <a th:href="@{/trainings/} + ${workplace.id}">Eğitimler</a>
+            </div>
+
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Çıkış Yap" class="logoff-button" />
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1><i class="fa-solid fa-chart-pie"></i> Grafikler</h1>
+            <p style="margin-bottom:20px">Risk Değerlendirme Tablosu Veri Grafikleri</p>
+
+            <input type="hidden" id="workplaceId" value="4">
+
+            <div class="graphs">
+                <canvas id="chart-tehlike-sayilari"></canvas>
+
+                <canvas id="chart-tehlike-sayilari-yerekipman"></canvas>
+
+                <canvas id="chart-tehlike-adi-toplamRisk"></canvas>
+
+                <canvas id="chart-tehlike-adi-toplamSonRisk"></canvas>
+
+                <canvas id="chart-yer-ekipman-toplamRisk"></canvas>
+
+                <canvas id="chart-yer-ekipman-toplamSonRisk"></canvas>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="scripts/script_risk_graphs.js"></script>
+</body>
+
+</html>
